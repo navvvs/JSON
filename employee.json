@@ -1,0 +1,10 @@
+{"records":[
+    {"id":1, "name":"Kevin", "gender": 1, "email": "kevindurant7@gmail.com", "type":"Standard", "phone":7584262324, "amount":5000, "event_id":1, "event_name":"Christmas eve Special","event_type":"Special Event"},
+    {"id":2, "name":"Jennifer", "gender": 2, "email": "jenniferns@yahoo.com", "type":"Premium", "phone":7584336824, "amount":8000,"event_id":2, "event_name":"Kenny Stand up","event_type":"Comedy"},
+    {"id":3, "name":"Navya", "gender": 2, "email": "Nayvaaa@yahoo.com", "type":"Premium", "phone":7584383054, "amount":4500,"event_id":3, "event_name":"Christmas eve Special","event_type":"Informative"},
+    {"id":4, "name":"Siddharth", "gender": 1, "email": "naamhaisidhu@gmail.com", "type":"Standard", "phone":92786554824, "amount":9000,"event_id":4, "event_name":"Suraj TedxTalk","event_type":"Art"},
+    {"id":5, "name":"Sachin", "gender": 1, "email": "Sachint33@hotmail.com", "type":"Premium", "phone":7584336824, "amount":8000,"event_id":5, "event_name":"Virtual Art workshop","event_type":"Entertainment"},
+    {"id":6, "name":"Kendall", "gender": 2, "email": "kendalllovee@yahoo.com", "type":"Standard", "phone":7584225624, "amount":6500,"event_id":6, "event_name":"Raffle draw","event_type":"informative"},
+    {"id":7, "name":"Naveen", "gender": 1, "email": "Nillof3rrs@yahoo.com", "type":"Standard", "phone":7584337824, "amount":9500,"event_id":7, "event_name":"Adith Tedxtalk","event_type":"Picasso Appreciation exhibition"}
+    
+]}

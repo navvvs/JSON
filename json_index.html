@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="json_demo.js"></script>
+</head>
+
+<body ng-controller="myctrl" style="background-image:url('about-image.jpg'); background-repeat: no-repeat; background-size:120% 150%;">
+    <h1 align="center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 40px; color: blanchedalmond;" >Details</h1>
+    <br>
+    <div style="padding-top: 30px;padding-left: 2px;">
+        <table cellpadding="2" cellspacing="2" border="1" style="background-color: #f5dca8">
+            <tr>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ID
+                    <br>
+                    <input type="text" s ng-model="search.id">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Name
+                    <br>
+                    <input type="text" ng-model="search.name">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Gender
+                    <br>
+                    <input type="text" ng-model="search.gender">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Email
+                    <br>
+                    <input type="text" ng-model="search.email">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Type
+                    <br>
+                    <input type="text" ng-model="search.type">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Phone
+                    <br>
+                    <input type="text" ng-model="search.phone">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Amount paid
+                    <br>
+                    <input type="text" ng-model="search.amount">
+                </th>
+            </tr>
+            <tr ng-repeat="item in names|filter:search|orderBy:'name'">
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.id}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.name|uppercase}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.gender|Genderr}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.email}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.type|lowercase}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.phone}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.amount|currency:"₹"}}</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div style="padding-top: 30px;padding-left: 340px;">
+        <table cellpadding="2" cellspacing="2" border="1" style="background-color: #f5dca8">
+            <tr>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Event ID
+                    <br>
+                    <input type="text" ng-model="search.event_id">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Event Name
+                    <br>
+                    <input type="text" ng-model="search.event_name">
+                </th>
+                <th style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Event Type
+                    <br>
+                    <input type="text" ng-model="search.event_type">
+                </th>
+            </tr>
+            <tr ng-repeat="item in names|filter:search">
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.event_id}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.event_name|uppercase}}</td>
+                <td style="font-family:'Courier New', Courier, monospace;">{{item.event_type|Typee}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
